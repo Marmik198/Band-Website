@@ -214,13 +214,14 @@ html {
     color: black;
     text-transform: uppercase;
     margin: 18px 0px;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 400;
     letter-spacing: 4px;
 }
 
 
 .light {
+    color: 25px;
     opacity: 0.6;
     margin: 1.3em 0;
 }
@@ -269,18 +270,125 @@ html {
 
 
 #tour {
-    margin: 0 auto;
     padding: 64px 0px;
     text-align: center;
     background: #000;
+}
+
+.max {
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
 }
 
 .white {
     color: white;
 }
 
+.table {
+    list-style-type: none;
+    padding: 40px 0px;
+}
 
 
+.table li {
+    background: white;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    color: gray;
+    font-size: 18px;
+    text-align: left;
+    padding: 12px;
+    padding-left: 25px;
+    display: block;
+}
+
+.table li .sold {
+    margin-left: 25px;
+    padding: 5px 15px;
+    background: #e81b1b;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.table li .badge {
+    margin-left: 80%;
+    padding: 5px 15px;
+    border: 0.1px solid black;
+    border-radius: 50%;
+    background: #000;
+    color: white;
+    font-size: 15px;
+}
+
+
+.imgrow {
+    padding: 14px 0px;
+    margin: 0 -16px;
+}
+
+
+.imgcard {
+    float: left;
+    padding: 0 13px;
+    width: 30%;
+    margin-bottom: 16px;
+}
+
+
+.imgcard img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: none;
+}
+
+.imgcard img:hover {
+    opacity: 0.6;
+}
+
+
+.imgcont {
+    background: white;
+}
+
+.imgcont h4 {
+    padding: 17px 0px 14px 18px;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 18px;
+    color: black;
+}
+
+.imgcont p {
+    padding: 0px 0px 14px 18px;
+    color: black;
+    text-align: left;
+}
+
+.modbtn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 8px 41% 20px 0;
+}
+
+.modbtn:hover {
+    background: #ccc;
+    color: black;
+    outline: black;
+}
+
+
+.imgrow::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 
@@ -297,16 +405,39 @@ html {
     .hides {
         display: none;
     }
-     
+
     .cont {
         text-align: center;
     }
-    
+
     .card {
         margin: 25px auto;
         display: block;
         float: none;
         width: 100%;
         padding: 0;
+    }
+
+    .table {
+        padding: 40px 15px;
+    }
+
+    .table li .badge {
+        margin-left: 60%;
+    }
+
+    .imgrow {
+        margin: 0;
+    }
+
+    .imgcard {
+        float: none;
+        width: 95%;
+        padding: 0 10px;
+        margin-bottom: 32px;
+    }
+
+    .modbtn {
+        margin-left: -22%;
     }
 }
