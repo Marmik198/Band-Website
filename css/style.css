@@ -3,10 +3,12 @@
     margin: 0;
 }
 
-body,
 html {
+    box-sizing: border-box !important;
+}
+
+body {
     font-family: "Lato", "sans-serif";
-    box-sizing: inherit;
 }
 
 ::selection {
@@ -276,7 +278,7 @@ html {
 }
 
 .max {
-    max-width: 800px;
+    max-width: 800px !important;
     margin: 0 auto;
     display: block;
 }
@@ -392,6 +394,140 @@ html {
 
 
 
+/*Modal*/
+
+
+
+
+
+/*Contact*/
+
+
+#contact {
+    background: white;
+    text-align: center;
+    padding: 64px 0;
+}
+
+.here {
+    padding: 32px 0;
+    max-width: 800px;
+}
+
+.here::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.side {
+    float: left;
+    width: 49.9999%;
+    margin-bottom: 16px;
+}
+
+.side p {
+    padding: 5px 0 5px 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.fro {
+    margin: 0 -16px 0px -16px;
+    padding: 0 8px;
+}
+
+.half {
+    float: left;
+    width: 46%;
+    padding: 0 8px;
+}
+
+.input {
+    padding: 8px;
+    padding-right: 0px;
+    padding-left: 8px;
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid #ccc;
+    overflow: visible;
+    margin-bottom: 10px;
+}
+
+
+.half::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.right {
+    float: right;
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0px -10px 10px 0; 
+}
+
+.right:hover {
+    background: #ccc;
+    color: black;
+}
+
+
+
+
+
+/*Map*/
+
+
+.map {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    filter: grayscale(50%);
+    border: none;
+}
+
+
+
+/*Footer*/
+
+
+.footer {
+    text-align: center;
+    color: black;
+    background: #f1f1f1;
+    padding: 64px;
+    font-size: 24px;
+    opacity: 0.6;
+    display: block;
+}
+
+
+.footer i:hover {
+    opacity: 0.3;
+}
+
+.foot {
+    font-size: 18px;
+    padding: 16px;
+}
+
+.foot a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
 /*Responsive*/
 
 
@@ -440,4 +576,34 @@ html {
     .modbtn {
         margin-left: -22%;
     }
+    
+    .side {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    
+    .fro {
+        margin: 0 !important;
+        padding: 0;
+    }
+    
+    .here {
+        padding: 0 0 0 15px;
+    }
+    
+    .half, .right {
+        float: none;
+        display: block;
+    }
+    
+    .half {
+        padding: 0;
+        width: 100%;
+    }
+    
+    .input {
+        width: 92%;
+    }
+    
 }
