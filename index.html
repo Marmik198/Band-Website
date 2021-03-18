@@ -170,6 +170,42 @@
     <!--Modal-->
 
 
+    <div id="modal">
+        <div class="modc">
+            <header class="teal">
+                <span onclick="document.getElementById('modal').style.display='none'" class="cross">x</span>
+                <h2 class="wide">
+                    <i class="fa fa-suitcase" style="margin-right: 16px;"></i>Tickets
+                </h2>
+            </header>
+            <div class="mhere">
+                <p>
+                    <label>
+                        <i class="fa fa-shopping-cart" style="margin-right: 5px"></i>
+                        Tickets, $15 per person
+                    </label>
+                </p>
+                <input type="num" placeholder="How Many?" name="num" class="input">
+                <p>
+                    <label>
+                        <i class="fa fa-user" style="margin-right: 5px"></i>
+                        Send To
+                    </label>
+                </p>
+                <input type="mail" placeholder="Enter Email" name="mail" class="input">
+                <button class="mobtn">
+                    pay <i class="fa fa-check" style="margin-left: 5px;"></i>
+                </button>
+                <button onclick="document.getElementById('modal').style.display='none'" class="mobtn mclose">Close <i class="fa fa-remove" style="margin-left: 5px;"></i>
+                </button>
+                <p class="help">
+                    Need <a href="#" style="color: teal;">help?</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
 
     <!--Contact-->
 

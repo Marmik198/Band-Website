@@ -26,3 +26,16 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 3000);    
 }
+
+
+
+//Onclick outside Modal, Modal = close
+
+
+
+var modal = document.getElementById('modal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 

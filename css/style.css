@@ -397,7 +397,122 @@ body {
 /*Modal*/
 
 
+#modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+}
 
+
+.modc {
+    background: white;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    margin: auto;
+    width: 600px;
+    padding: 0;
+    outline: 0;
+    position: relative;
+}
+
+
+.teal {
+    background: teal;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 32px 16px;
+}
+
+.cross {
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+.cross:hover {
+    background: #ccc;
+    color: black;
+}
+
+.wide {
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+
+.mhere {
+    padding: 2px 20px;
+}
+
+.mhere p {
+    margin-top: 10px;
+}
+
+.mhere .input {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.mobtn {
+    width: 100%;
+    padding: 16px 18px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: teal;
+    color: white;
+    border: none;
+    cursor: pointer
+}
+
+.mobtn:hover {
+    background: #ccc;
+    color: black;
+}
+
+
+.mclose {
+    width: 20%;
+    padding: 16px;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    font-size: 15px;
+    background: red;
+}
+
+.help {
+    float: right;
+    vertical-align: middle;
+    margin: 0 5px 10px 0;
+}
+
+.help::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 
 /*Contact*/
@@ -468,11 +583,11 @@ body {
     background: black;
     color: white;
     border: none;
-    padding: 12px 15px;
+    padding: 12px 18px;
     text-align: center;
     font-size: 15px;
     text-decoration: none;
-    margin: 0px -10px 10px 0; 
+    margin: 0px -10px 10px 0;
 }
 
 .right:hover {
@@ -494,7 +609,6 @@ body {
     filter: grayscale(50%);
     border: none;
 }
-
 
 
 /*Footer*/
@@ -531,13 +645,13 @@ body {
 /*Responsive*/
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     .hidel {
         display: none;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .hides {
         display: none;
     }
@@ -576,34 +690,43 @@ body {
     .modbtn {
         margin-left: -22%;
     }
-    
+
     .side {
         float: none;
         display: block;
         width: 100%;
     }
-    
+
     .fro {
         margin: 0 !important;
         padding: 0;
     }
-    
+
     .here {
         padding: 0 0 0 15px;
     }
-    
-    .half, .right {
+
+    .half,
+    .right {
         float: none;
         display: block;
     }
-    
+
     .half {
         padding: 0;
         width: 100%;
     }
-    
+
     .input {
         width: 92%;
     }
-    
+
+    .modal {
+        padding-top: 50px;
+    }
+
+    .modc {
+        width: 400px;
+    }
+
 }
